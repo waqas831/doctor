@@ -1,0 +1,120 @@
+/* Container for the calendar */
+.calendar-container {
+    padding: 20px;
+    width: 328px;
+  }
+  .calendar-container h3{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(20, 70, 123, 1);
+  }
+  .react-calendar {
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-calendar__navigation button {
+    color: rgba(52, 64, 84, 1);
+    min-width: 44px;
+    background: transparent !important;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+  
+  .react-calendar__month-view__weekdays {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: #d9534f;
+  }
+  
+  .react-calendar__tile {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    border: 1px solid transparent;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Highlight the start or end date with rgba(58, 182, 187, 1) */
+  .highlight-start-end {
+    background-color: rgba(58, 182, 187, 1) !important;
+    color: rgba(70, 112, 152, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Highlight the range dates with rgba(58, 182, 187, 0.1) */
+  .highlight-range {
+    background-color: rgba(58, 182, 187, 0.1) !important;
+    color: rgba(70, 112, 152, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Hover effect */
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #f0f0f0;
+  }
+  
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #dfe3e6;
+  }
+  
+  .react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+  }
+  
+  /* Hide prev2 and next2 buttons */
+  .react-calendar__navigation button.react-calendar__navigation__prev2-button,
+  .react-calendar__navigation button.react-calendar__navigation__next2-button {
+    display: none;
+  }
+  
+  /* Customize prev/next buttons */
+  .react-calendar__navigation button.react-calendar__navigation__prev-button,
+  .react-calendar__navigation button.react-calendar__navigation__next-button {
+    border: none;
+  }
+  
+  .react-calendar__navigation {
+    display: flex;
+  }
+  
+  .react-calendar__navigation__label {
+    border: none;
+  }
+  
+  .react-calendar__month-view__days__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .react-calendar__month-view__weekdays__weekday abbr[title] {
+    text-decoration: none;
+  }
+
+
+.react-calendar__month-view__days{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0px;
+}

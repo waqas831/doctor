@@ -1,0 +1,87 @@
+.sidebar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ffffff !important;
+  padding: 30px !important;
+  box-shadow: none !important;
+  @media (max-height: 750px) {
+      height: 400px;
+      overflow-y: auto;
+  }
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center; /* Ensures icon and label are aligned vertically */
+  padding: 8px !important;
+  border-radius: 5px;
+  color: #b0b0b0; /* Default text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-item .icon {
+  display: flex;
+  align-items: center; /* Vertically centers the icon */
+  margin-right: 10px;
+}
+
+.sidebar-item .icon svg path {
+  fill: #b0b0b0;
+  transition: fill 0.3s ease;
+}
+
+.sidebar-item:hover, .sidebar-item.active {
+  background-color: #1f4e7a; /* Background color on hover/active */
+  color: white; /* Text color on hover/active */
+}
+
+.sidebar-item:hover .icon svg path, .sidebar-item.active .icon svg path {
+  fill: white; /* Ensure the SVG icon path changes to white */
+}
+
+.sidebar-label {
+  font-family: 'Inter18pt-Regular';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.DashboardSidebar-otr {
+  position: relative;
+  height: calc(100vh - 94px);
+  /* border-right: 1px solid rgba(225, 225, 225, 1); */
+  @media (max-width: 1300px) {
+      display: none;
+  }
+}
+
+.sidebar-logout-otr {
+  position: absolute;
+  left: 24px;
+  bottom: 25px;
+}
+
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  gap: 0px 4px;
+  padding-bottom: 4px;
+  color: rgba(133, 128, 128, 1);
+  font-family: 'Inter18pt-Regular';
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.txt-help {
+  color: rgba(133, 128, 128, 1);
+  font-family: 'Inter18pt-Regular';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  cursor: pointer;
+}

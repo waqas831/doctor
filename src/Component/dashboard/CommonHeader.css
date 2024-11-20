@@ -1,0 +1,63 @@
+/* src/components/dashboard/CommonHeader.css */
+
+/* Common Header Container */
+.common-header {
+    background-color: #f0f0f0; /* Grey background color of the header */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack heading and buttons vertically */
+    align-items: center; /* Center align items horizontally */
+    top: 0; /* Position at the top */
+    width: 85vw; /* Full viewport width */
+    z-index: 1000; /* Ensure it's above other content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Heading Style */
+.common-header h1 {
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Space below the heading */
+    color: #14467B; /* Heading color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons Container */
+.navigation-buttons {
+    display: flex; /* Flexbox layout for buttons */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Full width for the button container */
+    background-color: #14467B; /* Background color of the button bar */
+    padding: 5px 0; /* Vertical padding for the button bar */
+    border-radius: 5px; /* Rounded corners for the button bar */
+    padding: auto;
+    border-radius:15px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button Style */
+.navigation-buttons button {
+    background-color: #14467B; /* Default button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 20px 35px; /* Increased padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 15px; /* Rounded corners for buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover and active state */
+    flex: 1; /* Make buttons take up equal space */
+    text-align: center; /* Center align text inside buttons */
+    font-size: 1rem; /* Adjust font size as needed */
+    margin: 4px;
+}
+
+/* Button Hover Effect */
+.navigation-buttons button:hover {
+    background-color: #14467B; /* Darker background color on hover */
+}
+
+/* Button Active Effect */
+.navigation-buttons button.active {
+    background-color: #ffffff; /* Background color when button is active */
+    color: #14467B; /* Text color when button is active */
+}

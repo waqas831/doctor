@@ -1,0 +1,29 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'  # Use Node 20.x as specified
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'build'  # Ensure this points to your build directory
+    Contents: '**/*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/build'
+  displayName: 'Copy build output'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/build'
+    ArtifactName: 'drop'
+  displayName: 'Publish Build Artifacts' 

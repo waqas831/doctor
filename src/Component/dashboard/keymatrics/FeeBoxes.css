@@ -1,0 +1,38 @@
+/* src/components/dashboard/FeeBoxes.css */
+
+.fee-boxes {
+    display: flex; /* Flexbox to align boxes in a row */
+    gap: 20px; /* Space between boxes */
+    margin-top: 20px; /* Margin top for spacing */
+}
+
+.fee-box {
+    flex: 1; /* Each box takes equal space */
+    background-color: white; /* White background for each box */
+    color: #14467B; /* Blue text color */
+    padding: 20px; /* Padding inside the boxes */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    min-width: 300px; /* Minimum width to ensure the boxes are sufficiently long */
+    min-height: 250px; /* Minimum height to ensure the boxes are sufficiently tall */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.fee-box svg {
+    margin-bottom: 10px; /* Space below the icon */
+    font-size: 2rem; /* Adjust icon size if necessary */
+}
+
+.fee-box h3 {
+    margin: 10px 0; /* Margin for the title */
+    font-size: 1.2rem; /* Adjust font size for the title */
+}
+
+.fee-box p {
+    font-size: 1.5rem; /* Adjust font size for the amount */
+    font-weight: bold; /* Make the amount bold */
+}

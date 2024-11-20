@@ -1,0 +1,48 @@
+.recent-activities {
+    max-height: 1800px; /* Increased height for the component */
+    overflow: hidden; /* Hide overflow */
+}
+
+.recent-activities-content {
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+.activity-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    border-bottom: 1px solid #ddd;
+    color: #555; /* Grey color for text */
+}
+
+.activity-dot {
+    width: 15px; /* Increased size of dot */
+    height: 15px; /* Increased size of dot */
+    border-radius: 50%;
+    background-color: #888; /* Grey color for the dot */
+    margin-right: 20px; /* Increased spacing */
+}
+
+.activity-description {
+    display: flex;
+    flex: 1;
+    justify-content: space-between; /* Align text and time on opposite sides */
+    align-items: center;
+}
+
+.activity-description p {
+    margin: 0;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: 500;
+}
+
+.activity-time {
+    font-size: 1rem; /* Slightly increased font size */
+    color: #888; /* Grey color for time */
+}

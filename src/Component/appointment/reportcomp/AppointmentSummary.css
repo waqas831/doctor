@@ -1,0 +1,41 @@
+.appointment-summary-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Space above */
+}
+
+.appointment-summary-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #14467B; /* Blue border */
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.appointment-summary-item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.appointment-title {
+    font-size: 1.5em; /* Increase title size */
+    color: #14467B;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 2.5em;
+    color: #14467B; /* Blue color for icons */
+    margin-bottom: 10px;
+}
+
+.appointment-value {
+    font-size: 2em; /* Larger value font */
+    color: #333;
+    font-weight: bold;
+}

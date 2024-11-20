@@ -1,0 +1,227 @@
+.doctor-profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .search-bar {
+    width: 100%;
+    background: white;
+    padding: 9px 12px;
+    border-radius: 0px;
+  }
+  
+  .search-input {
+       padding: 10px;
+       font-size: 16px;
+       font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+  }
+  .search-input:focus{
+    outline: none;
+    box-shadow: none;
+  }
+  .search-input::placeholder{
+    color: rgba(0, 0, 0, 0.24);
+  }
+  
+  .doctor-info-card {
+    display: flex;
+    align-items: center;
+    background-color: #42B8BE; /* Replace with the desired background color */
+    padding: 15px;
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .doctor-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-info h2 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .doctor-info p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .specialties {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    @media (max-width: 450px) {
+      flex-direction: column;
+  }
+  }
+  
+  .specialty {
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+    font-size: 12px;
+  }
+  
+  .rating {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0px 4px;
+  }
+
+
+.slot-calender{
+    display: flex;
+    gap: 0px 40px;
+    background: white;
+    margin-top: 12px;
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+  }
+}
+
+
+
+.date-range-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .date-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 100px 0px 20px 20px;
+    @media (max-width: 1100px) {
+      padding: 40px 20px 20px 20px;
+  }
+  @media (max-width: 490px) {
+   flex-direction: column;
+   gap: 16px;
+}
+  }
+  
+  .selected-dates {
+    display: flex;
+    align-items: center;
+  }
+  
+  .selected-dates input {
+    width: 120px;
+    padding: 5px;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cancel-btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .next-btn {
+    padding: 10px 15px;
+    background-color: rgba(20, 70, 123, 1); /* Enable button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .next-btn:disabled {
+    background-color: rgba(200, 200, 200, 1); /* Disabled button color */
+    cursor: not-allowed;
+  }
+  
+  .highlight-start-end {
+    background-color: rgba(58, 182, 187, 1);
+    color: white;
+  }
+  
+  .highlight-range {
+    background-color: rgba(58, 182, 187, 0.1);
+    color: black;
+  }
+  
+  .react-calendar__tile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .Appointment-modal-heading{
+    color: rgba(16, 24, 40, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .Appointment-heading-otr {
+  }
+  .Appointment-modal-closeIcon {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .Appointment-actions{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 0px 12px;
+}
+
+  .modal-action1{
+    width: 110px;
+    height: 40px;
+    border: 1px solid rgba(208, 213, 221, 1);
+    background: transparent;
+    color: rgba(52, 64, 84, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .modal-action2{
+    width: 110px;
+    height: 40px;
+    background: rgba(20, 70, 123, 1);
+    color: white;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }

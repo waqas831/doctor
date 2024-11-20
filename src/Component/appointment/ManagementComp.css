@@ -1,0 +1,73 @@
+/* src/components/appointment/ManagementComp.css */
+.management-container {
+    padding: 20px;
+    width: 97%;
+}
+
+.management-navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* Button styles */
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #14467B;
+    background-color: white;
+    border: 2px solid #14467B;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav-button.active {
+    background-color: #14467B;
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: #14467B;
+    color: white;
+}
+
+/* Icon inside the buttons */
+.nav-button .icon {
+    font-size: 1.3em;
+    color: black;
+}
+
+.nav-button:hover .icon {
+    color: white; /* Icon color turns white on hover */
+}
+
+.nav-button.active .icon{
+    color: white; /* Icon color turns white on click */
+}
+
+/* Content area styling */
+.management-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.management-content {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}

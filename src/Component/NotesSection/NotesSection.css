@@ -1,0 +1,120 @@
+.NotesSection-otr {
+    flex: 1;
+}
+.NotesSection-inr {
+    background: rgba(255, 255, 255, 1);
+    padding: 12px 14px;
+    text-align: center;
+    border-radius: 12px;
+}
+.NotesSection-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.NotesSection-heading {
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.NotesSection-all {
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+}
+.notes-body {
+    background: rgba(245, 242, 242, 1);
+    padding: 5px;
+    border-radius: 12px;
+}
+.notes-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+    list-style-type: none; /* Remove default bullets */
+}
+.notes-li {
+    position: relative;
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 20px; /* Space for the marker */
+}
+.notes-li::before {
+    content: '•'; /* Unicode for bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(20, 70, 123, 1); /* Same color as text */
+    font-size: 20px; /* Size of the bullet */
+    line-height: 18px; /* Align it with the text */
+  }
+.notes-btn-otr {
+    display: flex;
+    width: 78px;
+    height: 26px;
+    background: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.notes-btn-inr {
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+}
+.notes-footer {
+}
+.notes-amt-otr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+.notes-amt {
+    text-align: start;
+     color: rgba(20, 70, 123, 1);
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+}
+.notes-count {
+}
+.sign-docName {
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0px;
+}
+.sign-docName-inr {
+    display: flex;
+    gap: 0px 4px;
+}
+.sign {
+}
+.docName {
+}
+.notes-date {
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+}

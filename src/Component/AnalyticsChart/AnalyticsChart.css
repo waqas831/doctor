@@ -1,0 +1,38 @@
+.chart-container {
+    height: 342px;
+    margin: 0 auto;
+  }
+  
+  .chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .chat-heading{
+    padding: 20px 0px !important;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+.session-minutes-otr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 32px;
+    padding-top: 16px;
+}
+  .session{
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .Minutes{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }

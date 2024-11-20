@@ -1,0 +1,65 @@
+.lab-results {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.lab-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.lab-results-header h3 {
+    font-size: 1.2em;
+    color: #14467B; /* Dark blue */
+    margin: 0;
+}
+
+.lab-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lab-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-info {
+    display: flex;
+    align-items: center;
+}
+
+.result-icon {
+    font-size: 1.2em;
+    color: #26A69A; /* Teal color for the lab result icon */
+    margin-right: 10px;
+}
+
+.result-name {
+    font-size: 1em;
+    color: #333;
+}
+
+.result-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.action-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #14467B;
+}

@@ -1,0 +1,127 @@
+.specialties-ul{
+    display: flex;
+    align-items: center;
+    gap: 0px 4px;
+  }
+  .slot-selection-container {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  @media (max-width: 430px) {
+    grid-template-columns: repeat(1, 1fr); 
+}
+  }
+  .slot-selection-container h3{
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 20px !important;
+  }
+  .slot-selection-container span{
+    color: rgba(86, 87, 89, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .slot-item {
+    background-color: rgba(167, 168, 171, 1); /* Default unselected slot color */
+    color: rgba(86, 87, 89, 1); /* Ensure text is visible on dark background */
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    transition: .3s;
+  }
+  
+  .slot-item.selected {
+    background-color: rgba(20, 70, 123, 1); /* Selected slot color */
+    color: white;
+  }
+  
+
+  
+  .slot-item:disabled {
+    background-color: rgba(200, 200, 200, 1); /* Disabled slots have lighter gray */
+    cursor: not-allowed; /* Show 'not allowed' cursor for disabled slots */
+    color: #777; /* Dim the text color */
+  }
+  
+
+
+  
+  .appointment-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the grid */
+    gap: 10px;
+  }
+  .appointment-type-grid  .appointment-type-item {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.24);
+ }
+  .appointment-type-item span{
+    color: rgba(86, 87, 89, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+
+
+  .appointment-type-container {
+    padding-top: 65px;
+    @media (max-width: 1100px) {
+      padding-top: 30px;
+  }
+  }
+  
+  .appointment-type-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  @media (max-width: 430px) {
+    grid-template-columns: repeat(1, 1fr); 
+}
+  }
+  
+
+
+  
+  .appointment-type-item span {
+    color: rgba(86, 87, 89, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .appointment-type-item.selected {
+    background-color: rgba(20, 70, 123, 1); /* Selected background color */
+    color: white;
+  }
+  
+  .appointment-type-item.selected span {
+    color: white; /* Ensure text color changes to white when selected */
+  }
+  
+ 
+  

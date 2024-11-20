@@ -1,0 +1,72 @@
+.all-appointments-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    overflow-y: auto; /* Add scroller if the content exceeds */
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.appointments-icon {
+    font-size: 1.5em;
+    color: #14467B;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #14467B;
+    margin: 0;
+}
+
+.upcoming-info {
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointments-table th,
+.appointments-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.doctor-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.status.confirm {
+    background-color: #28a745;
+}
+
+.status.booked {
+    background-color: #007bff;
+}
+
+.status.pending {
+    background-color: #ffc107;
+}

@@ -1,0 +1,116 @@
+/* Container for the scheduling component */
+.scheduling-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Slots container */
+.slots-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #14467B;
+    margin-bottom: 10px;
+}
+
+/* Grid layout for the slots */
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Increase gap for more space between slots */
+}
+
+.slot {
+    padding: 20px; /* Increased size of the slots */
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* Slightly increase font size */
+    color: #333;
+}
+
+.slot.selected {
+    background-color: #14467B;
+    color: white;
+}
+
+.slot:hover {
+    background-color: #ccc;
+}
+
+/* Calendar container */
+.calendar-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the calendar */
+    align-items: center;
+    
+    margin-right: 20px; /* Add margin to separate the calendar from the slots */
+    flex-direction: column;
+}
+
+/* Styling the calendar */
+.react-calendar {
+    width: 100%;
+    max-width: 400px; /* Adjust max width to fit the component */
+    border: none; /* Removed the border */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+}
+
+.react-calendar__navigation button {
+    color: #14467B;
+    min-width: 44px;
+    background: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #f0f0f0;
+}
+
+.react-calendar__tile {
+    background: none;
+    color: #14467B;
+    padding: 10px;
+    border-radius: 0; /* Removed border-radius */
+    cursor: pointer;
+}
+
+.react-calendar__tile--active {
+    background-color: #14467B;
+    color: white;
+}
+
+.react-calendar__tile--active:hover {
+    background-color: #0f3557;
+}
+
+.react-calendar__tile--now {
+    background: none; /* Removed background for the current date */
+    color: #14467B;
+}
+
+.react-calendar__month-view__weekdays {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #14467B;
+}
+
+.react-calendar__tile--hover {
+    background-color: #f0f0f0;
+}

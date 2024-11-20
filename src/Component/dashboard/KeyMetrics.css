@@ -1,0 +1,48 @@
+/* src/components/dashboard/KeyMetrics.css */
+
+/* Container for Key Metrics */
+.key-metrics {
+    background-color: #f0f0f0;
+    flex: 1; /* Take up the remaining space in the flex container */
+}
+
+/* Container for Key Metrics Content */
+.key-metrics-content {
+    display: flex; /* Flexbox for layout */
+    gap: 20px; /* Space between boxes */
+    justify-content: space-between; /* Distribute space between boxes */
+    margin-top: 20px;
+}
+
+/* Style for Metric Boxes */
+.metric-box {
+    background-color: #14467B; /* Background color of the boxes */
+    color: white; /* Text color */
+    padding: 20px; /* Padding inside boxes */
+    border-radius: 8px; /* Rounded corners */
+    flex: 1; /* Make boxes take up equal space */
+    text-align: center; /* Center align text inside boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.metric-box h3 {
+    color: #ffffff; /* Light color for the title */
+    font-size: 1rem; /* Font size for the title */
+    font-weight: lighter;
+    font-size: larger;
+    margin-top: 20px; /* Remove default margin */
+}
+
+.metric-box p {
+    color: #ffffff; /* Light color for the title */
+    font-size: 1rem; /* Font size for the title */
+    font-weight: bolder;
+    font-size:xx-large;
+    margin-top: 20px; /* Remove default margin */
+}
+
+/* Icon Style */
+.metric-box svg {
+    margin-top: 20px;
+    margin-bottom: 10px; /* Space below the icon */
+}

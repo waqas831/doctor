@@ -1,0 +1,104 @@
+.MeettingHistory-main-otr {
+    background: white;
+    padding: 12px;
+}
+.MeettingHistory-main-heading {
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 55px !important;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.MeettingHistory-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(58, 182, 187, 1);
+   
+    height: 44px;
+   
+}
+.time-slot {
+    display: flex;
+    align-items: center;
+    gap: 0px 12px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+.arrow-down {
+}
+.exp-btn-otr {
+    height: 44px;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(217, 217, 217, 0.23);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.exp-btn {
+}
+.MeettingHistory-table-otr{
+    @media (max-width: 600px) {
+        overflow-x: auto;
+    }
+}
+.MeettingHistory-table-otr table{
+    width: 100%;
+    @media (max-width: 600px) {
+        width: 170%;
+    }
+}
+
+.MeettingHistory-table-otr table thead tr th{
+    color: rgba(20, 70, 123, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    padding: 32px 0px 8px 8px;
+}
+
+.MeettingHistory-table-otr table tbody tr td{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 8px;
+}
+.MeettingHistory-Pagination {
+    padding-top: 40px;
+    @media (max-width: 650px) {
+        padding-top: 20px;
+    }
+}
+.MeettingHistory-Pagination .pagination .page-item .page-link{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0px;
+    border-color: black;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    @media (max-width: 650px) {
+        width: 40px;
+        height: 40px;
+    }
+}

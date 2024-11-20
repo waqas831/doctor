@@ -1,0 +1,90 @@
+/* src/components/StatsBox.css */
+
+.stats-box {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (left) of the container */
+    justify-content: flex-start; /* Align items to the start (left) */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: 500px; /* Adjust size as needed */
+    color: #000;
+    background-color: #f0f0f0; /* Default background color for the box */
+    text-align: left; /* Align text to the left */
+    position: relative; /* For positioning the curve dot */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .stats-box {
+        max-width: 400px; /* Adjust size for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .stats-box {
+        max-width: 350px; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-box {
+        max-width: 300px; /* Further adjust size for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .stats-icon {
+        margin-right: 0; /* Remove margin for stacked layout */
+        margin-bottom: 10px; /* Add space below the icon */
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-box {
+        max-width: 250px; /* Adjust size for very small screens */
+    }
+
+    .stats-title {
+        font-size: 12px; /* Reduce font size for very small screens */
+    }
+
+    .stats-count {
+        font-size: 18px; /* Reduce font size for very small screens */
+    }
+}
+
+.stats-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px; /* Add space between icon and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-icon img {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.stats-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically if needed */
+}
+
+.stats-title {
+    font-size: 14px; /* Reduced size for title text */
+    font-weight: normal; /* Non-bold */
+    margin-bottom: 5px;
+}
+
+.stats-count {
+    font-size: 20px;
+    font-weight: bold; /* Bold count */
+}

@@ -1,0 +1,44 @@
+/* Main container for traffic details */
+.traffic-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Each box style */
+.traffic-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.traffic-box:hover {
+    background-color: #e0e0e0;
+}
+
+/* Icons inside the boxes */
+.box-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #14467B;
+}
+
+/* Box title text */
+.box-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Box value text */
+.box-value {
+    font-size: 1.2em;
+    color: #666;
+}

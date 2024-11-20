@@ -1,0 +1,172 @@
+/* Main container for the patient component */
+.patient-comp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+/* Wrapper for Patient Info and Details */
+.patient-info-details-wrapper {
+    display: flex;
+    justify-content: space-between; /* Make Patient Info and Details appear in one row */
+    gap: 20px;
+}
+
+/* Patient Info section */
+.patient-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center;
+    border: 2px solid #14467B; /* Blue border */
+}
+
+.patient-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #14467B;
+    margin: 0;
+}
+
+.patient-email {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.appointment-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.appointment-count {
+    font-size: 1.2em;
+    text-align: center;
+    color: #14467B;
+}
+
+.message-buttons {
+    margin-top: 20px;
+}
+
+.message-btn, .email-btn {
+    background-color: #14467B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.message-btn:hover, .email-btn:hover {
+    background-color: #0f3557;
+}
+
+/* Patient Details section */
+.patient-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 60%; /* Adjust width to take the remaining space */
+    border: 2px solid #14467B; /* Blue border */
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.detail-item p {
+    margin: 5px 0;
+}
+
+.detail-item strong {
+    color: #14467B;
+}
+
+/* Notes and File/Documents section in one row */
+.extra-info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Notes section */
+.notes-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #14467B; /* Blue border */
+}
+
+.notes-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.save-note-btn {
+    background-color: #14467B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-note-btn:hover {
+    background-color: #0f3557;
+}
+
+/* File/Documents section */
+.documents-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #14467B; /* Blue border */
+    margin-right: 20px;
+}
+
+.documents-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.documents-container ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-file-btn {
+    background-color: #14467B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-file-btn:hover {
+    background-color: #0f3557;
+}

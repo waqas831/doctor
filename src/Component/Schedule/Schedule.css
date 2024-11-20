@@ -1,0 +1,160 @@
+.schedule-container {
+    font-family: 'Roboto', sans-serif;
+    width: 95%; /* Container width slightly reduced for better spacing */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better elevation */
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctor-info h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.doctor-info p {
+    margin: 0;
+    color: #777;
+}
+
+.calendar {
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calendar-nav {
+    background: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #7a7a7a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.calendar-nav:hover {
+    background-color: #e6f7ff;
+    color: #003366;
+}
+
+.calendar-date {
+    font-size: 1.1em;
+    color: #7a7a7a;
+    margin: 0 20px;
+}
+
+.today-btn {
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: #7a7a7a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 20px;
+}
+
+.today-btn:hover {
+    background-color: #e6f7ff;
+    color: #003366;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(7, 1fr); /* 1 for time labels, 7 for days */
+    grid-auto-rows: 50px; /* Increased height of time slots for better spacing */
+    gap: 10px; /* Larger gap for cleaner separation between slots */
+}
+
+.days-row {
+    display: contents;
+}
+
+.time-row {
+    display: contents;
+}
+
+.time-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.day-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Apply blue background to weekdays */
+.weekday {
+    background-color: #e6f7ff;
+}
+
+/* No background color for weekends, or you can customize it */
+.weekend {
+    background-color: #fff;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    color: #666;
+    cursor: pointer; /* Make slots interactive */
+    transition: background-color 0.3s ease;
+}
+
+.time-slot:hover {
+    background-color: #d0e8ff; /* Hover effect */
+}
+
+.booked {
+    font-weight: bold;
+    border-left: 5px solid #003366;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+    background-color: #e5ebf1;
+}

@@ -1,0 +1,138 @@
+.wrapper-up {
+  padding-top: 47px;
+}
+.row-price{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 93px 0px;
+    padding-bottom: 176px;
+}
+.LandingPrice {
+  background-color: rgba(228, 254, 255, 1);
+}
+.LandingPrice-inr {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  flex-wrap: wrap-reverse;
+  gap: 25px 0px;
+  padding: 30px 132.82px 44px 110px;
+  width: 76.41%;
+  border-radius: 24px;
+}
+.postion-price{
+    position: absolute;
+    left: -18%;
+    bottom: -8%;
+}
+
+.LandingPrice-otr{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 76px;
+}
+.li-price:not(:last-child){
+    margin-bottom: 24px !important;
+}
+.detailPrice {
+  font-family: "Montserrat-Regular";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 117.02px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-img {
+  padding-right: 24px;
+}
+.pricehead {
+  font-family: "Montserrat-Regular";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36.57px;
+  color: rgba(38, 119, 188, 1);
+}
+.deatal-price {
+  font-family: "Inter18pt-Regular";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36.31px;
+  color: rgba(49, 49, 49, 1);
+  padding: 31px 0px !important;
+}
+.para-price {
+  font-family: "Inter18pt-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: rgba(91, 91, 91, 1);
+  display: flex;
+}
+.tick{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 1600px) {
+    .postion-price{
+        display: none;
+    }
+    .LandingPrice-otr{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .tick{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .LandingPrice-inr {
+      padding:  44px;
+      width: 95%;
+    }
+    .row-price {
+      padding-top: 40px;
+      gap: 45px 0px;
+      padding-bottom: 50px;
+  }
+  .detailPrice { 
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 73.02px;
+    
+}
+.price-img {
+  padding-right: 10px;
+  height: 40px;
+}
+.deatal-price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.31px;
+  padding: 20px 0px;
+}
+.para-price {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.2px;
+}
+.li-price:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+.pricehead {
+  font-size: 20px;
+  line-height: 25.57px;
+}
+}
+@media only screen and (max-width: 575px) {
+  
+  .LandingPrice-inr {
+    padding: 20px;
+}
+}

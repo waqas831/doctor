@@ -1,0 +1,218 @@
+.DashboardNavbar-otr {
+}
+.DashboardNavbar-inr {
+    display: flex;
+    align-items: center;
+    padding: 24px 16px 11px 16px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    gap: 0px 50px;
+    @media (max-width: 600px) {
+        justify-content: space-between;
+        padding: 16px 16px 11px 16px;
+    }
+}
+.DashboardNavbar-Logo-otr {
+    width: 227px;
+    text-align: center;
+    @media (max-width: 600px) {
+        width: initial;
+    }
+}
+.DashboardNavbar-Logo {
+    width: 132px;
+    height: 49px;
+    object-fit: cover;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+    @media (max-width: 600px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.menuIcon-inr{
+    display: none;
+    @media (max-width: 1300px) {
+        display: flex;
+    }
+}
+.page-heading-user-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    @media (max-width: 1300px) {
+        justify-content: flex-end;
+    }
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.for-admin {
+    display: flex;
+    align-items: center;
+    gap: 0px 55px;
+    @media (max-width: 1300px) {
+        display: none;
+    }
+}
+.page-heading {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+    color: rgba(20, 70, 123, 1);
+}
+.nav-input-otr {
+    padding: 15px 12px 17px 44px;
+    background: rgba(245, 242, 242, 1);
+    border-radius: 5px;
+    width: 370px;
+    position: relative;
+}
+.nav-input {
+    background: rgba(245, 242, 242, 1);
+    width: 100%;
+    border: none;
+}
+.nav-input::placeholder{
+    color: rgba(0, 0, 0, 0.24);
+}
+.nav-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.navSearchIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+.DashboardNavbar-user {
+    display: flex;
+    align-items: center;
+    gap: 0px 16px;
+}
+.DashboardNavbar-navbell-otr {
+    cursor: pointer;
+}
+.DashboardNavbar-navbell {
+    width: 24px;
+    height: 24px;
+}
+.DashboardNavbar-userDetail {
+}
+.DashboardNavbar-user-name {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    
+}
+.DashboardNavbar-user-type {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(107, 114, 128, 1);
+}
+.DashboardNavbar-user-img-otr {
+}
+.DashboardNavbar-user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.DashboardNavbar-menuIcon-otr {
+    cursor: pointer;
+}
+.DashboardNavbar-menuIcon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+.notification-dropdown {
+    position: absolute;
+    top: 72px;
+    right: 200px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-header {
+    background-color: #008080;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notification-header h4 {
+    margin: 0;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .notification-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .notification-item p{
+
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .notification-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .notification-dot {
+    margin-left: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+
+  .offcanvas{
+    width: 300px !important;
+  }
+
+  .offcanvas-body{
+    padding: 0 !important;
+  }

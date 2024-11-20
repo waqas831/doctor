@@ -1,0 +1,203 @@
+
+/* src/components/dashboard/DoctorList.css */
+
+/* Doctor List Container */
+.doctor-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Remove bullet points for the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Each Doctor Item */
+.doctor-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 15px; /* Add spacing between the columns */
+}
+
+/* Doctor Image */
+.doctor-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Fixed Width for Doctor Name and Information */
+.doctor-info {
+    width: 200px; /* Fixed width for name */
+    padding-left: 20px;
+}
+
+.doctor-name {
+    font-size: 1.2em;
+    color: #14467B;
+    margin: 0;
+    font-weight: 500;
+    white-space: nowrap;    /* Prevent the name from wrapping */
+    overflow: hidden;       /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for long names */
+}
+
+.doctor-hospital {
+    color: #666;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Specialization and Location Styling */
+.doctor-specialization {
+    width: 150px; /* Fixed width for specialization */
+    text-align: left; /* Align left for consistency */
+    font-size: 1em;
+    color: #333;
+}
+
+.doctor-location {
+    width: 150px; /* Fixed width for location */
+    text-align: left; /* Align left for consistency */
+    font-size: 1em;
+    color: #333;
+}
+
+/* Icon Styling */
+.doctor-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.3em;
+    color: black;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.icon:hover {
+    color: #666;
+}
+
+.verified {
+    color: green;
+}
+
+/* Styling for Buttons Below the Doctor List */
+.doctor-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Action Buttons */
+.action-button {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    color: #14467B;
+    border: 2px solid #14467B;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-2px);
+}
+
+.action-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px; /* Fixed width */
+    width: 100%;
+    margin: 50px auto; /* Center the modal */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 80vh; /* Ensure modal doesn't exceed viewport height */
+    overflow-y: auto; /* Allow scrolling if content is too long */
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Modal Form */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Field Styling */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #14467B;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0e345b;
+}
+
+/* Modal Buttons */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #14467B;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background-color: #0e345b;
+}
+
+.modal-button.cancel {
+    background-color: #aaa;
+}
+
+.modal-button.cancel:hover {
+    background-color: #888;
+}

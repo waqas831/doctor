@@ -1,0 +1,106 @@
+.DashboardNavbar-otr {
+}
+.DashboardNavbar-inr {
+    display: flex;
+    align-items: center;
+    padding: 24px 16px 11px 16px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    gap: 0px 50px;
+}
+.DashboardNavbar-Logo-otr {
+    width: 227px;
+    text-align: center;
+}
+.DashboardNavbar-Logo {
+    width: 132px;
+    height: 49px;
+    object-fit: cover;
+}
+
+.page-heading-user-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.for-admin {
+    display: flex;
+    align-items: center;
+    gap: 0px 55px;
+}
+.page-heading {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+    color: rgba(20, 70, 123, 1);
+}
+.nav-input-otr {
+    padding: 15px 12px 17px 44px;
+    background: rgba(245, 242, 242, 1);
+    border-radius: 5px;
+    width: 370px;
+    position: relative;
+}
+.nav-input {
+    background: rgba(245, 242, 242, 1);
+    width: 100%;
+    border: none;
+}
+.nav-input::placeholder{
+    color: rgba(0, 0, 0, 0.24);
+}
+.nav-input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.navSearchIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+.DashboardNavbar-user {
+    display: flex;
+    align-items: center;
+    gap: 0px 16px;
+}
+.DashboardNavbar-navbell-otr {
+    cursor: pointer;
+}
+.DashboardNavbar-navbell {
+    width: 24px;
+    height: 24px;
+}
+.DashboardNavbar-userDetail {
+}
+.DashboardNavbar-user-name {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    
+}
+.DashboardNavbar-user-type {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(107, 114, 128, 1);
+}
+.DashboardNavbar-user-img-otr {
+}
+.DashboardNavbar-user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.DashboardNavbar-menuIcon-otr {
+    cursor: pointer;
+}
+.DashboardNavbar-menuIcon {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,92 @@
+.usage-section {
+    padding: 20px;
+    background-color: white;
+  }
+  .usage-section h3{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .time-filter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 0px 12px;
+  }
+  .time-filter span{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .dropdown-arrow {
+    margin-left: 5px;
+  }
+  
+  .stats-container {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      flex-direction: column;
+  }
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @media (max-width: 800px) {
+      margin: 0 auto;
+  }
+  }
+  
+  .stat-item h4 {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 1);
+    @media (max-width: 800px) {
+      font-family: 'Inter18pt-Regular';
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 1);
+  }
+  }
+  
+  .stat-item p {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+   color: rgba(0, 0, 0, 1);
+   @media (max-width: 800px) {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 1);
+}
+  }
+
+  .stats-container .stat-item img{
+    @media (max-width: 800px) {
+      width: 40px;
+      height: 40px;
+  }
+  }
+  
+
+

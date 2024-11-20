@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+  
+  ul,
+  li {
+    list-style: none !important;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+  }
+  
+  a {
+    display: block;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+
+.try{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(20, 70, 123, 1);
+}
+
+.try2{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background-color: black;
+}
+
+.try3{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.24);
+    background-color:  rgba(245, 242, 242, 1);
+}
+
+.try4{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+.try5{
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(107, 114, 128, 1);
+}
+
+
+.try6{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(20, 70, 123, 1);
+}
+
+.try7{
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(20, 70, 123, 1);
+    background-color: rgba(245, 242, 242, 1);
+}
+
+.try8{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFF;
+    background-color: rgba(58, 182, 187, 1);
+}
+
+
+.welcome-docProfile{
+    display: flex;
+    gap: 16px;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+  }
+}
+.suggestion-notes{
+    padding-top: 16px;
+    display: flex;
+    gap: 16px;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+  }
+}

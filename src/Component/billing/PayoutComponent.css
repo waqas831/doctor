@@ -1,0 +1,120 @@
+/* Overall container for the component */
+.payout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add some gap between rows */
+    width: 99%;
+    padding: 20px;
+}
+
+/* Row container for each payout and doctor info */
+.payout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    gap: 20px; /* Add some space between left and right buttons */
+    transition: box-shadow 0.3s ease;
+    height: 80px; /* Set consistent height */
+}
+
+/* Left Button */
+.left-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white; /* White background for left buttons */
+    color: #14467b; /* Blue text color */
+    border: 2px solid #14467b; /* Blue border */
+    border-radius: 8px;
+    flex: 1; /* Make the left button take equal space */
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    height: 100%; /* Ensure button takes up the full row height */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the left button */
+.left-button:hover {
+    background-color: #14467b; /* Change background to blue on hover */
+    color: white; /* Change text color to white */
+    border-color: #14467b; /* Maintain blue border */
+}
+
+.left-button:hover .icon {
+    color: white; /* Change icon color to white on hover */
+}
+
+/* Icon in the left button */
+.left-button .icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #14467b; /* Make icon color blue */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Right Doctor Info Button */
+.right-doctor-info {
+    display: flex;
+    align-items: center;
+    background-color: #14467b; /* Blue background for right container */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    flex: 2; /* Make the right button take more space */
+    justify-content: flex-start; /* Align items to the left */
+    height: 100%; /* Ensure button takes up the full row height */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the right button */
+.right-doctor-info:hover {
+    background-color: #0f3557; /* Darker blue on hover */
+}
+
+/* Doctor Image */
+.doctor-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Doctor Details (aligned next to the image) */
+.doctor-details {
+    display: flex;
+    align-items: center; /* Align doctor name and specialization horizontally */
+    margin-left: 15px;
+    flex: 1; /* Ensure this part takes up remaining space */
+}
+
+.doctor-name-specialization {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Space between name and icon */
+}
+
+.doctor-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+
+/* Verified Icon */
+.verified-icon {
+    font-size: 1.5em;
+    color: #f7f7f7;
+}
+
+/* Hover effect for the verified icon */
+.right-doctor-info:hover .verified-icon {
+    color: #e0e0e0; /* Lighten the verified icon color on hover */
+}

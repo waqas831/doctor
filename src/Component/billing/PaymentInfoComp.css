@@ -1,0 +1,74 @@
+/* Container for the entire component */
+.payment-info-comp {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Box styling for the payment details section */
+.payment-details-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Box styling for the circular chart section */
+.payment-chart-box {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* Align items to the center of the box */
+    align-items: center;
+}
+
+/* Payment details section */
+.payment-details h3 {
+    color: #14467B;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.payment-details p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+.track-link {
+    color: #14467B;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.track-link:hover {
+    color: #0f3557;
+}
+
+/* Circular chart section */
+.payment-chart {
+    width: 30%;  /* Reduced the width to make the bar smaller */
+    margin-bottom: 20px;
+}
+
+/* Position the "Track Dashboard" link at the bottom-left corner */
+.payment-chart-box .track-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1em;
+}

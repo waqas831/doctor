@@ -1,0 +1,120 @@
+.bottomAward-otr{
+    background-image: url("../../images/BG-Award-landing.svg");
+    object-fit: cover;
+}
+.bottomAward-inr{
+    padding: 86px 0px 204.02px 96.4px;
+    width: 45%;
+}
+
+.upperAward-otr{
+    background-color: rgba(20, 69, 123, 1);
+    padding: 62px 64px 75px 128px;
+}
+
+.upperAward-inr{
+    background-color: rgba(58, 182, 187, 1);
+    padding: 48px 81px 55px 56.04px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.award-btn-otr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.award-btn-inr{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Inter18pt-Regular';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26.4px;
+    background-color: rgba(20, 69, 123, 1);
+    padding: 17px 10px 18px 23px;
+    border-radius: 8px;
+    min-width: 231.05px;
+}
+.call-icon{
+    padding-right: 4px;
+    font-size: 26px;
+}
+.upperaward-heading{
+    font-family: 'Montserrat-Regular';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    color: rgba(255, 255, 255, 1);
+
+}
+.award-heading{
+    font-family: 'Inter18pt-Regular';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    color: rgba(255, 255, 255, 1);
+}
+.award-heading-span{
+    /* font-family: 'PlusJakartaSans-Regular'; */
+    font-weight: 700;
+}
+.award-detail{
+    font-family: 'Inter18pt-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 58px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 41.77px !important;
+}
+
+@media only screen and (max-width: 1300px) {
+    .bottomAward-inr{
+        padding: 86px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .upperAward-otr{
+        padding: 62px;
+    }
+    .upperAward-inr{
+        padding: 48px;
+    }
+    .award-detail {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 16.77px;
+    }
+    .award-heading {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .upperaward-heading {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .award-btn-inr {
+        font-size: 14px;
+        line-height: 18.4px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: auto;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .bottomAward-inr{
+        padding: 40px;
+    }
+    .upperAward-otr{
+        padding: 32px;
+    }
+    .upperAward-inr{
+        padding: 28px;
+    }
+}

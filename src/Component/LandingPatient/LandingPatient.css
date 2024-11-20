@@ -1,0 +1,73 @@
+.patient-otr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+}
+.patient-detail {
+  padding: 36.01px 0px 30.02px 0px !important;
+  font-family: "Inter18pt-Regular";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.05px;
+  color: rgba(104, 114, 118, 1);
+}
+.patient-head {
+  font-family: "Inter18pt-Regular";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26.35px;
+  padding-top: 15px !important;
+  color: rgba(0, 35, 51, 1);
+}
+.SwiperSlide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+.mySwiper {
+  height: 500px !important;
+  padding: 0px 222px !important;
+  margin: 70px 0px;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(197, 195, 194, 1) !important;
+  width: 9px !important;
+  height: 9px !important;
+  border: 1px solid rgba(197, 195, 194, 1) !important;
+}
+
+.swiper-pagination-bullet-active {
+  /* background-color: rgba(58, 182, 187, 1) !important; */
+  background-color: rgb(0, 0, 0) !important;
+}
+.wrapper-patient {
+  text-align: center;
+}
+.patient-heading {
+    font-family: 'Montserrat-Regular';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.01px;
+    color: rgba(0, 35, 51, 1);
+}
+.patient-para{
+    font-family: 'Inter18pt-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.05px;
+    color: rgba(104, 114, 118, 1);
+    padding-top: 30.08px !important;
+}
+@media only screen and (max-width: 1600px) {
+    .mySwiper {
+        padding: 0px 100px !important;
+      }
+}
+@media only screen and (max-width: 1200px) {
+    .mySwiper {
+        padding: 0px!important;
+        margin: 0px 20px !important;
+      }
+}

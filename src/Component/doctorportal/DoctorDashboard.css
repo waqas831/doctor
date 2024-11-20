@@ -1,0 +1,16 @@
+.dashboard {
+    flex: 1; /* Takes up remaining space */
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 15px; /* Space between columns */
+    
+}
+
+
+.doctor-dashboard {
+    display: flex;
+
+}

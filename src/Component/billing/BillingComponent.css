@@ -1,0 +1,9 @@
+/* src/components/dashboard/BillingComponent.css */
+
+.billing-component {
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%; /* Take up the full width */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  

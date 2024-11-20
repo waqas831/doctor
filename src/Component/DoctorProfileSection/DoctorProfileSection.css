@@ -1,0 +1,79 @@
+.DoctorProfileSection-otr {
+    flex: 1;
+}
+.DoctorProfileSection-inr-main {
+    background: white;
+    padding: 23px 0px 21px 0px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(20, 70, 123, 1);
+}
+.DoctorProfileSection-img-otr {
+}
+.DoctorProfileSection-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.DoctorProfileSection-name {
+    padding: 5px 0px;
+    font-family: 'Inter18pt-Regular';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(20, 70, 123, 1);
+}
+.DoctorProfileSection-degree {
+    color: rgba(67, 66, 68, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+.DoctorProfileSection-exp {
+    color: rgba(67, 66, 68, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+.DoctorProfileSection-special-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 4px;
+    padding: 5px 0px;
+    margin: 0px 80px;
+}
+.DoctorProfileSection-special {
+    padding: 5px !important;
+    background-color: rgba(245, 242, 242, 1);
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Inter18pt-Regular';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+.rating-otr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 4px;
+}
+.star-ul {
+    display: flex;
+    align-items: center;
+    gap: 0px 4px;
+}
+.star-li {
+}
+.star-img {
+}
+.DoctorProfileSection-rating {
+    font-family: 'Inter18pt-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(67, 66, 68, 1);
+}

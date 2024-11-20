@@ -1,0 +1,65 @@
+/* Main container for the component */
+.available-doctors {
+    background-color: #ffffff; /* White background for the entire container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+.available-doctors h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #14467B; /* Blue heading */
+}
+
+/* Doctor list styling */
+.available-doctors ul {
+    list-style: none;
+    padding: 0;
+}
+
+.doctor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White background for each doctor item */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #14467B; /* Blue text for doctor details */
+    border: 1px solid #14467B; /* Blue border */
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #14467B; /* Blue text for the doctor name */
+}
+
+.doctor-specialization {
+    font-size: 0.9em;
+    color: #14467B; /* Blue text for the specialization */
+}
+
+/* Status badge styling */
+.doctor-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #14467B; /* White text inside the status badge */
+}
+
+/* Hover effect */
+.doctor-item:hover {
+    background-color: #f0f0f0; /* Slight gray background on hover */
+}

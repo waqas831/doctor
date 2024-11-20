@@ -1,0 +1,54 @@
+.appointment-comp {
+    width: 100%; /* Occupy 80% of the parent width */
+    margin: 0 auto; /* Center the component horizontally */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Navbar styles */
+.appointment-navbar {
+    display: flex;
+    justify-content: space-between; /* Ensure buttons are evenly distributed */
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 40px; /* Increase padding for a better look */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width of the container */
+    box-sizing: border-box; /* Ensure padding doesn't increase the size */
+}
+
+/* Button styles */
+.nav-button {
+    flex: 1;
+    text-align: center; /* Center text in button */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    color: #14467B;
+    background-color: white;
+    border: 2px solid #14467B;
+    margin: 0 10px; /* Add space between buttons */
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect for the buttons */
+.nav-button:hover {
+    background-color: #14467B;
+    color: white;
+}
+
+/* Active button styling */
+.active {
+    background-color: #14467B;
+    color: white;
+}
+
+/* Content area styling */
+.appointment-content {
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,74 @@
+/* src/components/dashboard/DoctorsComponent.css */
+.doctors-component {
+    background-color: #f4f4f4;
+    color: #14467b;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Optional padding for better spacing */
+    box-sizing: border-box; /* Ensure padding doesn’t affect the overall width/height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .doctors-component {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    h1 {
+      font-size: 20px; /* Smaller font size for headers */
+    }
+  
+    .modal-form {
+      display: flex;
+      flex-direction: column; /* Stack form inputs vertically */
+    }
+  
+    .form-input {
+      width: 100%; /* Full width inputs */
+      margin-bottom: 10px; /* Spacing between inputs */
+      padding: 8px; /* Padding for inputs */
+    }
+  
+    .modal-actions {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: stretch; /* Stretch buttons to full width */
+    }
+  
+    .modal-button {
+      width: 100%; /* Full width buttons */
+      margin-top: 10px; /* Spacing between buttons */
+    }
+  }
+  
+  /* Additional styles for larger screens */
+  @media (min-width: 769px) {
+    .modal-form {
+      display: flex;
+      flex-direction: row; /* Keep form inputs in a row on larger screens */
+      flex-wrap: wrap; /* Wrap inputs to the next line if needed */
+    }
+  
+    .form-input {
+      flex: 1; /* Allow inputs to take available space */
+      margin: 5px; /* Spacing around inputs */
+      min-width: 200px; /* Set a minimum width */
+    }
+  
+    .modal-actions {
+      flex-direction: row; /* Keep buttons in a row on larger screens */
+      justify-content: flex-end; /* Align buttons to the right */
+    }
+  
+    .modal-button {
+      margin-left: 10px; /* Space between buttons */
+    }
+  }
+  

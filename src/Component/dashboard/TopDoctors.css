@@ -1,0 +1,149 @@
+/* src/components/dashboard/TopDoctors.css */
+
+.top-doctors {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 600px; /* Set maximum height */
+    overflow: hidden; /* Hide overflow for controlled scrolling */
+}
+
+.top-doctors-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.top-doctors-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.filter-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #14467B;
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    z-index: 10;
+    width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #14467B;
+    color: #ffffff;
+}
+
+.doctors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 400px; /* Set maximum height for scrolling */
+    scrollbar-width: thin; /* Firefox scrollbar width */
+    scrollbar-color: #14467B #f0f0f0; /* Firefox scrollbar color */
+}
+
+/* Stylish scrollbar for WebKit browsers */
+.doctors-list::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.doctors-list::-webkit-scrollbar-thumb {
+    background-color: #14467B; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+}
+
+.doctors-list::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background of the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.doctor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px; /* Adjust padding to add space on the right */
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add gap between avatar and details */
+    flex: 1; /* Allow this section to grow and take available space */
+}
+
+.doctor-avatar {
+    margin-right: 15px;
+}
+
+.doctor-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.doctor-specialization {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.doctor-stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0; /* Prevent shrinking to avoid overlap */
+}
+
+.doctor-reviews {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}

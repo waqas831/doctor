@@ -1,0 +1,35 @@
+/* src/components/dashboard/StatsAndCalendar.css */
+
+.stats-calendar-container {
+    display: flex; /* Flexbox to align items side by side */
+    gap: 20px; /* Space between the chart and calendar */
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+/* Style for the Chart Container */
+.chart-container {
+    flex: 2; /* Make chart container take up more space than the calendar */
+    border-radius: 12px; /* Rounded corners for the chart container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for the chart container */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+    height: 400px; /* Set a specific height for the chart */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}
+
+/* Style for the Calendar Container */
+.calendar-container {
+    flex: 1; /* Make calendar container take up less space */
+    border-radius: 12px; /* Rounded corners for the calendar container */
+}
+
+/* Style for the Calendar */
+.dashboard-calendar {
+    width: 100%; /* Make calendar width 100% of its container */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

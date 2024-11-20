@@ -1,0 +1,59 @@
+.current-medication {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    flex: 1; /* Allow the component to take available space in the parent */
+    min-width: 300px; /* Set a minimum width */
+    height: 200px; /* Let the height adjust based on content */
+}
+
+.medication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.medication-header h3 {
+    font-size: 1.2em;
+    color: #14467B; /* Dark blue */
+    margin: 0;
+}
+
+.medication-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #14467B;
+}
+
+.medication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medication-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pill-icon {
+    font-size: 1.2em;
+    color: #26A69A; /* Teal color for pill icon */
+    margin-right: 10px;
+}
+
+.medication-name {
+    font-size: 1em;
+    color: #333;
+}
